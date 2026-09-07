@@ -50,5 +50,37 @@ public class StaffService {
 
         return new Staff();
     }
+    public Staff updateStaff(Long id,
+                             String name,
+                             String role,
+                             String phoneNumber) {
+
+        Staff staff = staffRepository.findById(id).orElse(null);
+
+        if (staff == null || !staff.getIsActive()) {
+            return new Staff();
+        }
+
+        staff.setName(name);
+        staff.setRole(role);
+        staff.setPhoneNumber(phoneNumber);
+
+        return staffRepository.save(staff);
+    }
+
+    public Boolean deleteById(Long id) {
+
+        Staff staff = staffRepository.findById(id).orElse(null);
+
+        if (staff == null || !staff.getIsActive()) {
+            return false;
+        }
+
+        staff.setIsActive(false);
+
+        staffRepository.save(staff);
+
+        return true;
+    }
 }
 
