@@ -1,0 +1,16 @@
+package com.cl.Logistics.Freight.Network.entities;
+
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+@Getter
+@Setter
+@Entity
+class DeliveryStop extends BaseClass {
+    private Integer sequence;
+    private String address;
+    private String status;
+    private LocalDateTime eta;
+}
