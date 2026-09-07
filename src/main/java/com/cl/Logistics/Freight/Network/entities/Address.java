@@ -17,4 +17,7 @@ class Address extends BaseClass{
 
     @ManyToOne
     private Customer customer;
+
+    @ManyToOne
+    private ServiceZone serviceZone;
 }

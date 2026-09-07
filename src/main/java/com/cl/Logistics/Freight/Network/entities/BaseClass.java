@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @MappedSuperclass
 @Setter
-@Setter
+
 
 public class BaseClass {
     @Id

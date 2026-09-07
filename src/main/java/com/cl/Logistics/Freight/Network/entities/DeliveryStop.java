@@ -1,6 +1,7 @@
 package com.cl.Logistics.Freight.Network.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,4 +14,10 @@ class DeliveryStop extends BaseClass {
     private String address;
     private String status;
     private LocalDateTime eta;
+
+    @ManyToOne
+    private Route route;
+
+    @ManyToOne
+    private Shipment shipment;
 }

@@ -21,4 +21,9 @@ class Carrier extends BaseClass{
 
     @OneToMany(mappedBy = "carrier")
     private List<Vehicle>vehicles;
+
+    @OneToMany(mappedBy = "carrier")
+    private List<Driver>drivers;
+
+
 }

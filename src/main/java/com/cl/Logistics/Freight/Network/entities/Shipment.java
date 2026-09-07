@@ -29,4 +29,7 @@ class Shipment extends BaseClass {
 
     @OneToMany(mappedBy = "shipment")
     private List<TrackingEvent>trackingEvents;
+
+    @ManyToOne
+    private Carrier carrier;
 }
