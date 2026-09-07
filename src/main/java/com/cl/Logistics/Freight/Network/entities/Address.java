@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-class Address extends BaseClass{
+public class Address extends BaseClass{
     private String street;
     private String city;
     private String postalCode;

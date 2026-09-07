@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-class DeliveryStop extends BaseClass {
+public class DeliveryStop extends BaseClass {
     private Integer sequence;
     private String address;
     private String status;

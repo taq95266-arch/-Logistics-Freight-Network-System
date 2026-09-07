@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-class ShipmentItem extends BaseClass{
+public class ShipmentItem extends BaseClass{
     private Integer quantity;
 
     @ManyToOne

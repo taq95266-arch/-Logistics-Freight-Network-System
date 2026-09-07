@@ -1,5 +1,5 @@
 package com.cl.Logistics.Freight.Network.entities;
-
+import java.math.BigDecimal;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @Entity
 
-class ServiceZone extends BaseClass{
+public class ServiceZone extends BaseClass{
     private String name;
     private String region;
     private BigDecimal baseRate;

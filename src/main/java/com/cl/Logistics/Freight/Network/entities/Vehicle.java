@@ -11,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-class Vehicle extends BaseClass{
+public class Vehicle extends BaseClass{
     private String plateNumber;
     private String type;
     private Double capacityKg;

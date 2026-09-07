@@ -1,6 +1,7 @@
 package com.cl.Logistics.Freight.Network.Repositories;
 
+import com.cl.Logistics.Freight.Network.entities.Staff;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface StaffRepositories extends JpaRepository<StaffRepositories,Long> {
+public interface StaffRepositories extends JpaRepository<Staff,Long> {
 }

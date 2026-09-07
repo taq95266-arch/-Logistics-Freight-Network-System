@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
-class Invoice extends BaseClass {
+public class Invoice extends BaseClass {
     private BigDecimal amount;
     private String status;
     private LocalDate issuedDate;

@@ -10,7 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-class Customer extends BaseClass {
+public class Customer extends BaseClass {
     private String name;
     private String email;
     private String phoneNumber;

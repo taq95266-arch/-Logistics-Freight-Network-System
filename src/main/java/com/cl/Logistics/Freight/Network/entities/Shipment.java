@@ -13,7 +13,7 @@ import java.util.List;
 @Setter
 @Entity
 
-class Shipment extends BaseClass {
+public class Shipment extends BaseClass {
     private LocalDate shipmentDate;
     private String status;
     private Double totalWeight;

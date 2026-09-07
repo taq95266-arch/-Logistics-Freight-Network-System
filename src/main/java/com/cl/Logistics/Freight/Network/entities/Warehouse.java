@@ -11,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-class Warehouse extends BaseClass {
+public class Warehouse extends BaseClass {
     private String name;
     private String location;
     private Integer capacity;

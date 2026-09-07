@@ -13,7 +13,7 @@ import java.util.List;
 @Setter
 @Entity
 
-class Route extends BaseClass{
+public class Route extends BaseClass{
     private LocalDate routeDate;
     private String origin;
     private String destination;

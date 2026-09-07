@@ -10,10 +10,11 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-class Product  extends BaseClass{
+ public class Product  extends BaseClass{
     private String name;
     private String sku;
     private Double weightKg;
+    private String category;
 
     @OneToMany(mappedBy = "product")
     private List<InventoryItem>inventoryItems;

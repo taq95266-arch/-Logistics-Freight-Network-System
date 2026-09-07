@@ -11,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-class Driver extends BaseClass{
+public class Driver extends BaseClass{
     private String name;
     private String licenseNumber;
     private String phoneNumber;

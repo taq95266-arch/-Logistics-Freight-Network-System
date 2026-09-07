@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 
-class TrackingEvent extends BaseClass{
+public class TrackingEvent extends BaseClass{
     private LocalDateTime eventTime;
     private String location;
     private String status;

@@ -10,7 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-class Carrier extends BaseClass{
+public class Carrier extends BaseClass{
     private String name;
     private String contactEmail;
     private String phoneNumber;

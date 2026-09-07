@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-class InventoryItem extends BaseClass {
+public class InventoryItem extends BaseClass {
     private Integer quantity;
     private String shelfLocation;
 

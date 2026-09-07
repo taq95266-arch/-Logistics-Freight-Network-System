@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-class Staff extends BaseClass{
+public class Staff extends BaseClass{
     private String name;
     private String role;
     private String phoneNumber;
